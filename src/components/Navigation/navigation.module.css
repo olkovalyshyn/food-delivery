@@ -1,0 +1,17 @@
+li{
+    list-style: none;
+}
+
+li +li{
+    margin-left: 20px;
+}
+
+.psevdo::before{
+content: "";
+    border-left: 2px solid black;
+   padding-left: 15px;
+}
+
+.flex {
+    display: flex;
+}
