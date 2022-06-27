@@ -15,3 +15,8 @@ content: "";
 .flex {
     display: flex;
 }
+
+.link{
+    text-decoration: none;
+}
+

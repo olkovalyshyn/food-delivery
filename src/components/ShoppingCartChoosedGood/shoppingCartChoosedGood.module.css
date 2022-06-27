@@ -1,0 +1,7 @@
+.section {
+    width: 650px;
+    height: 400px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 7px;
+        margin-left: 10px;
+}

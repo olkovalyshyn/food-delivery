@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 // import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Navigation from './Navigation/Navigation';
 import Shop from './Shop/Shop';
 import ShoppingCart from './ShoppingCart/ShoppingCart';
@@ -8,8 +9,11 @@ function App() {
   return (
     <div>
       <Navigation />
-      <Shop />
-      <ShoppingCart />
+
+      <Routes>
+        <Route path="/" element={<Shop />} />
+        <Route path="/ShoppingCart" element={<ShoppingCart />} />
+      </Routes>
     </div>
   );
 }
