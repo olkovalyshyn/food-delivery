@@ -4,14 +4,14 @@ const shortid = require('shortid');
 
 const goodsPath = path.join(__dirname, './base.json');
 
-function addGood(foto, name, prise) {
+function addGood({ photo, name, prise }) {
   try {
     fs.readFile(goodsPath, 'utf-8').then(data => {
       const parsedData = JSON.parse(data);
 
       const newGood = {
         id: shortid.generate(),
-        foto,
+        photo,
         name,
         prise,
       };

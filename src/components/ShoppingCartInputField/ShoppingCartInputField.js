@@ -5,7 +5,7 @@ function ShoppingCartInputField() {
     <>
       <div className={s.section}>
         <form className={s.flex}>
-          <label className={s.label} for="name">
+          <label className={s.label} htmlFor="name">
             Name:
             <input
               className={s.input}
@@ -16,7 +16,7 @@ function ShoppingCartInputField() {
             ></input>
           </label>
 
-          <label className={s.label} for="email">
+          <label className={s.label} htmlFor="email">
             Email:
             <input
               className={s.input}
@@ -27,7 +27,7 @@ function ShoppingCartInputField() {
             ></input>
           </label>
 
-          <label className={s.label} for="phone">
+          <label className={s.label} htmlFor="phone">
             Phone:
             <input
               className={s.input}
@@ -38,7 +38,7 @@ function ShoppingCartInputField() {
             ></input>
           </label>
 
-          <label className={s.label} for="address">
+          <label className={s.label} htmlFor="address">
             Address:
             <input
               className={s.input}

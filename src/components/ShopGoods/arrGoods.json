@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "photo": "photo-01",
+    "name": "Big big burger - 01",
+    "prise": 11
+  },
+  {
+    "id": 2,
+    "photo": "photo-02",
+    "name": "Big big burger - 02",
+    "prise": 22
+  },
+
+  {
+    "id": 3,
+    "photo": "photo-03",
+    "name": "Big big burger - 03",
+    "prise": 33
+  },
+
+  {
+    "id": 4,
+    "photo": "photo-04",
+    "name": "Big big burger - 04",
+    "prise": 44
+  },
+
+  {
+    "id": 5,
+    "photo": "photo-05",
+    "name": "Big big burger - 05",
+    "prise": 55
+  },
+  {
+    "id": 6,
+    "photo": "photo-06",
+    "name": "Big big burger - 06",
+    "prise": 66
+  }
+]
