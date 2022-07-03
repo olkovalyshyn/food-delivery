@@ -1,10 +1,35 @@
+import { useState } from 'react';
 import s from './shoppingCartInputField.module.css';
 
 function ShoppingCartInputField() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [address, setAddress] = useState('');
+
+  const hundleChange = event => {
+    switch (event.currentTarget.name) {
+      case 'name':
+        setName(event.currentTarget.value);
+        break;
+      case 'email':
+        setEmail(event.currentTarget.value);
+        break;
+      case 'phone':
+        setPhone(event.currentTarget.value);
+        break;
+      case 'address':
+        setAddress(event.currentTarget.value);
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
     <>
       <div className={s.section}>
-        <form className={s.flex}>
+        <div className={s.flex}>
           <label className={s.label} htmlFor="name">
             Name:
             <input
@@ -13,6 +38,8 @@ function ShoppingCartInputField() {
               name="name"
               id="name"
               placeholder="input"
+              value={name}
+              onChange={hundleChange}
             ></input>
           </label>
 
@@ -24,6 +51,8 @@ function ShoppingCartInputField() {
               name="email"
               id="email"
               placeholder="input"
+              value={email}
+              onChange={hundleChange}
             ></input>
           </label>
 
@@ -35,6 +64,8 @@ function ShoppingCartInputField() {
               name="phone"
               id="phone"
               placeholder="input"
+              value={phone}
+              onChange={hundleChange}
             ></input>
           </label>
 
@@ -46,9 +77,11 @@ function ShoppingCartInputField() {
               name="address"
               id="address"
               placeholder="input"
+              value={address}
+              onChange={hundleChange}
             ></input>
           </label>
-        </form>
+        </div>
       </div>
     </>
   );

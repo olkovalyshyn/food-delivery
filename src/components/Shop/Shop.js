@@ -2,12 +2,12 @@ import s from './shop.module.css';
 import ShopChoose from '../ShopChoose/ShopChoose';
 import ShopGoods from '../ShopGoods/ShopGoods';
 
-function Shop() {
+function Shop(props) {
   return (
     <>
       <div className={s.flex}>
         <ShopChoose />
-        <ShopGoods />
+        <ShopGoods onAdd={props.onAdd} />
       </div>
     </>
   );
