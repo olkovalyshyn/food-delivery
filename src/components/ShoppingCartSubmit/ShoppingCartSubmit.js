@@ -1,9 +1,12 @@
 import s from './ShoppingCartSubmit.module.css';
 
-function ShoppingCartSubmit() {
+function ShoppingCartSubmit(props) {
   return (
     <div className={s.flex}>
-      <p>Total price: 123</p>
+      <p>
+        Total price:{' '}
+        {props.onPrice.reduce((summ, item) => summ + item.price, 0)}
+      </p>
       <button type="submit" className={s.button}>
         Submit
       </button>

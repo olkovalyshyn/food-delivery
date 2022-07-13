@@ -11,7 +11,7 @@ function ShoppingCart(props) {
         <ShoppingCartInputField />
         <ShoppingCartChoosedGood onCart={props.onCart} />
       </div>
-      <ShoppingCartSubmit />
+      <ShoppingCartSubmit onPrice={props.onCart} />
     </form>
   );
 }
